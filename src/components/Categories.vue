@@ -10,7 +10,7 @@
         <li
           v-for="cat in Categories"
           :key="cat"
-          class="uppercase p-2 mx-4 text-xl hover:text-red-600 cursor-pointer"
+          class="uppercase p-2 mx-4 text-xl hover:text-primary-red cursor-pointer"
         >
           {{ cat }}
         </li>

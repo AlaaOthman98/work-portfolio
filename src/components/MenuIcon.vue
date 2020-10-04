@@ -6,19 +6,19 @@
     :class="{ open: isOpen }"
   >
     <span
-      class="block absolute top-0 left-0 h-1 w-full bg-black group-hover:bg-red-600 opacity-100 transform rotate-0 transition duration-200 ease-in-out"
+      class="block absolute top-0 left-0 h-1 w-full bg-black group-hover:bg-primary-red opacity-100 transform rotate-0 transition duration-200 ease-in-out"
     ></span>
 
     <span
-      class="block absolute mt-2 left-0 h-1 w-full bg-black group-hover:bg-red-600 opacity-100 transform rotate-0 transition duration-200 ease-in-out"
+      class="block absolute mt-2 left-0 h-1 w-full bg-black group-hover:bg-primary-red opacity-100 transform rotate-0 transition duration-200 ease-in-out"
     ></span>
 
     <span
-      class="block absolute mt-2 h-1 w-full bg-black group-hover:bg-red-600 opacity-100 left-0 transform rotate-0 transition duration-200 ease-in-out"
+      class="block absolute mt-2 h-1 w-full bg-black group-hover:bg-primary-red opacity-100 left-0 transform rotate-0 transition duration-200 ease-in-out"
     ></span>
 
     <span
-      class="block absolute mt-4 h-1 w-full bg-black group-hover:bg-red-600 opacity-100 left-0 transform rotate-0 transition duration-200 ease-in-out"
+      class="block absolute mt-4 h-1 w-full bg-black group-hover:bg-primary-red opacity-100 left-0 transform rotate-0 transition duration-200 ease-in-out"
     ></span>
   </div>
 </template>
