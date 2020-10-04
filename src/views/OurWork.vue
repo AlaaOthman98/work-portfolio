@@ -1,17 +1,17 @@
 <template>
   <main>
-    <ProjectCategories />
+    <Categories />
     <ProjectsGallery />
   </main>
 </template>
 
 <script>
-import ProjectCategories from "@/components/ProjectCategories.vue";
+import Categories from "@/components/Categories.vue";
 import ProjectsGallery from "@/views/ProjectsGallery.vue";
 
 export default {
   components: {
-    ProjectCategories,
+    Categories,
     ProjectsGallery,
   },
 };

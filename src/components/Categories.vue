@@ -8,7 +8,7 @@
       </div>
       <ul class="hidden md:flex items-center justify-center my-16">
         <li
-          v-for="cat in projectCategories"
+          v-for="cat in Categories"
           :key="cat"
           class="uppercase p-2 mx-4 text-xl hover:text-red-600 cursor-pointer"
         >
@@ -23,7 +23,7 @@
 export default {
   data() {
     return {
-      projectCategories: [
+      Categories: [
         "all",
         "social",
         "ecommerce",
