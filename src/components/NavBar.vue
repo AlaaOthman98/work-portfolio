@@ -3,7 +3,7 @@
     <router-link :to="{ name: 'Home' }">
       <h1 class="text-red-600 font-semibold text-5xl">STRV</h1>
     </router-link>
-    <h3 class="hidden sm:block font-bold text-2xl uppercase">Our Work</h3>
+    <h3 class="hidden md:block font-bold text-2xl uppercase">Our Work</h3>
 
     <MenuIcon />
   </header>
