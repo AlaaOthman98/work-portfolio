@@ -1,7 +1,18 @@
 <template>
-  <div>Our work</div>
+  <main>
+    <ProjectCategories />
+    <ProjectsGallery />
+  </main>
 </template>
 
 <script>
-export default {};
+import ProjectCategories from "@/components/ProjectCategories.vue";
+import ProjectsGallery from "@/views/ProjectsGallery.vue";
+
+export default {
+  components: {
+    ProjectCategories,
+    ProjectsGallery,
+  },
+};
 </script>
