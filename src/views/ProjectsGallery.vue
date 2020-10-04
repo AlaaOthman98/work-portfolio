@@ -1,7 +1,7 @@
 <template>
-  <div class="flex items-center justify-center">
+  <div class="flex items-center justify-center px-10 pb-32">
     <div
-      class="px-10 grid grid-cols-1 md:grid-cols-3 grid-rows-none gap-5 xl:w-full lg:w-11/12"
+      class="grid grid-cols-1 md:grid-cols-3 grid-rows-none gap-5 md:gap-x-5 md:gap-y-10 xl:w-full lg:w-11/12"
     >
       <ProjectCard
         v-for="project in projects"

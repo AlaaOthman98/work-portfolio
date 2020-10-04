@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full mt-0 md:mt-5 lg:mt-10 cursor-pointer relative">
+  <div class="w-full cursor-pointer relative">
     <img :src="imagePath" alt="" />
     <h3
       class="absolute top-0 px-10 py-6 text-white text-5xl md:text-4xl lg:text-5xl uppercase"
