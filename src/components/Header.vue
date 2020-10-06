@@ -1,6 +1,6 @@
 <template>
   <header class="flex justify-between items-center p-10">
-    <router-link :to="{ name: 'Home' }">
+    <router-link :to="{ name: 'OurWork' }">
       <h1 class="text-primary-red font-semibold text-5xl tracking-wider">
         STRV
       </h1>
