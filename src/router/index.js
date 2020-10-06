@@ -10,11 +10,38 @@ const routes = [
     path: "/",
     name: "OurWork",
     component: OurWork,
+    children: [
+      {
+        path: "",
+        name: "All",
+        component: ProjectsGallery,
       },
       {
-    path: "/our-work",
-    name: "OurWork",
-    component: OurWork,
+        path: "social",
+        name: "Social",
+        component: ProjectsGallery,
+      },
+      {
+        path: "ecommerce",
+        name: "Ecommerce",
+        component: ProjectsGallery,
+      },
+      {
+        path: "travel",
+        name: "Travel",
+        component: ProjectsGallery,
+      },
+      {
+        path: "lifestyle",
+        name: "Lifestyle",
+        component: ProjectsGallery,
+      },
+      {
+        path: "other",
+        name: "Other",
+        component: ProjectsGallery,
+      },
+    ],
   },
 ];
 

@@ -12,7 +12,10 @@
           :key="li"
           class="uppercase whitespace-no-wrap tracking-wider p-2 mx-4 text-xl hover:text-primary-red cursor-pointer"
         >
-          {{ li }}
+          <router-link
+            :to="{ name: li.charAt(0).toUpperCase() + li.slice(1) }"
+            >{{ li }}</router-link
+          >
         </li>
       </ul>
     </div>
