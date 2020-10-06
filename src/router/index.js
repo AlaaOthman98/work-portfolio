@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import OurWork from "../views/OurWork.vue";
 import ProjectsGallery from "../views/ProjectsGallery.vue";
+import ProjectNotFound from "../views/ProjectNotFound.vue";
 
 Vue.use(VueRouter);
 
@@ -40,6 +41,10 @@ const routes = [
         path: "other",
         name: "Other",
         component: ProjectsGallery,
+      },
+      {
+        path: "*",
+        component: ProjectNotFound,
       },
     ],
   },
