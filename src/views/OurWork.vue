@@ -1,14 +1,13 @@
 <template>
   <main>
     <NavBar :navList="categories" />
-    <ProjectsGallery />
+    <router-view></router-view>
     <QuestionSection />
   </main>
 </template>
 
 <script>
 import NavBar from "@/components/NavBar.vue";
-import ProjectsGallery from "@/views/ProjectsGallery.vue";
 import QuestionSection from "@/components/QuestionSection.vue";
 
 export default {
@@ -26,7 +25,6 @@ export default {
   },
   components: {
     NavBar,
-    ProjectsGallery,
     QuestionSection,
   },
 };
