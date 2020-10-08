@@ -4,7 +4,7 @@
       class="grid grid-cols-1 md:grid-cols-3 grid-rows-none gap-5 md:gap-x-5 md:gap-y-10 xl:w-full lg:w-11/12"
     >
       <ProjectCard
-        v-for="project in tested"
+        v-for="project in currentCategory"
         :key="project.title"
         :cardInfo="project"
       />
@@ -65,9 +65,9 @@ export default {
     ProjectCard,
   },
   computed: {
-    tested() {
+    currentCategory() {
       const clickedCategory = this.$route.name;
-      console.log(clickedCategory);
+
       return clickedCategory === "All"
         ? projects
         : projects.filter(project => project.category === clickedCategory);
