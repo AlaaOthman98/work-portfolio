@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Header />
+    <NavModal />
     <router-view />
     <Footer />
   </div>
@@ -8,11 +9,13 @@
 
 <script>
 import Header from "@/components/Header.vue";
+import NavModal from "@/components/NavModal.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
   components: {
     Header,
+    NavModal,
     Footer,
   },
 };
