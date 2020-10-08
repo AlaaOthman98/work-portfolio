@@ -7,18 +7,22 @@
   >
     <span
       class="block absolute top-0 left-0 h-1 w-full bg-black group-hover:bg-primary-red opacity-100 transform rotate-0 transition duration-200 ease-in-out"
+      :class="{ 'bg-white': isOpen }"
     ></span>
 
     <span
       class="block absolute mt-2 left-0 h-1 w-full bg-black group-hover:bg-primary-red opacity-100 transform rotate-0 transition duration-200 ease-in-out"
+      :class="{ 'bg-white': isOpen }"
     ></span>
 
     <span
       class="block absolute mt-2 h-1 w-full bg-black group-hover:bg-primary-red opacity-100 left-0 transform rotate-0 transition duration-200 ease-in-out"
+      :class="{ 'bg-white': isOpen }"
     ></span>
 
     <span
       class="block absolute mt-4 h-1 w-full bg-black group-hover:bg-primary-red opacity-100 left-0 transform rotate-0 transition duration-200 ease-in-out"
+      :class="{ 'bg-white': isOpen }"
     ></span>
   </div>
 </template>
@@ -27,12 +31,30 @@
 export default {
   data() {
     return {
-      isOpen: false,
+      categories: [
+        "all",
+        "social",
+        "ecommerce",
+        "travel",
+        "lifestyle",
+        "other",
+      ],
     };
   },
   methods: {
     toggleMenu() {
-      this.isOpen = !this.isOpen;
+      this.$store.dispatch("toggleModal", {
+        modalStatus: this.isOpen,
+        modalItems: this.categories,
+      });
+      this.isOpen
+        ? (document.querySelector("body").style.overflow = "hidden")
+        : (document.querySelector("body").style.overflow = "visible");
+    },
+  },
+  computed: {
+    isOpen() {
+      return this.$store.state.modalIsOpen;
     },
   },
 };
@@ -48,12 +70,10 @@ export default {
 
   span:nth-child(2) {
     transform: rotate(45deg);
-    /* background-color: white; */
   }
 
   span:nth-child(3) {
     transform: rotate(-45deg);
-    /* background-color: white; */
   }
 
   span:nth-child(4) {
