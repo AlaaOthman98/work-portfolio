@@ -33,7 +33,7 @@ export default {
   },
   computed: {
     currentCategory() {
-      return this.$route.name;
+      return this.$route.name ? this.$route.name : this.$route.path.slice(1);
     },
   },
 };
