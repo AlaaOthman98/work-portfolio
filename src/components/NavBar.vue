@@ -38,3 +38,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.router-link-exact-active {
+  color: #ef0d33;
+}
+</style>
